@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<title>Skomsky Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('pics/IMG_20200812_122751-bazaar.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("pics/ferns.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("pics/campfire.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+.square-quote {
+    float: left;
+    background-color: #0b50ca;
+    opacity: 0.66;
+  }
+  
+  .stop { 
+      clear: both;
+  }
+
+  .square-cite {
+    float: left;
+    background-color: #8e0f33;
+    opacity: 0.66;
+  }
+
+</style>
+<body>
+
+<div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-gray w3-hover-gray w3-hide-medium w3-hide-large w3-left" href="javascript:void(0);"                    onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home"                                                                                               
+            class="w3-bar-item w3-button w3-hide-small w3-gray "><i class="fa fa-home fa-lg" aria-hidden="true"></i>&nbsp;HOME</a>
+        <a href="#about"                                                                                              
+            class="w3-bar-item w3-button w3-hide-small w3-gray "><i class="fa fa-user" aria-hidden="true"></i>&nbsp;ABOUT</a>
+        <a href="http://cis-linux2.temple.edu:8080/SP20_3308_tun49199/index.html#/home" target=_blank"                
+            class="w3-bar-item w3-button w3-hide-small w3-gray "><i class="fa fa-th" aria-hidden="true"></i>&nbsp;SAMPLE WORK</a>
+        <a href="https://drive.google.com/file/d/1kMUD7y9qDviOY9yNu8NJ6YcXu7Nqiyva/view?usp=sharing" target="_blank"  
+            class="w3-bar-item w3-button w3-hide-small w3-gray "><i class="fa fa-file-word-o" aria-hidden="true"></i>&nbsp;MY RESUME</a> 
+        <a href="#contact"                                                                                            
+            class="w3-bar-item w3-button w3-hide-small w3-gray "><i class="fa fa-envelope"  aria-hidden="true"></i>&nbsp;CONTACT</a>
+        <!--<a href="#" 
+            class="w3-bar-item w3-button w3-hide-small w3-gray "><i class="fa fa-bars" aria-hidden="true"></i></a>  -->      
+    </div>
+    
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about"                                                                                             
+            class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+        <a taret="_blank"  href="http://cis-linux2.temple.edu:8080/SP20_3308_tun49199/index.html#/home"             
+            class="w3-bar-item w3-button" onclick="toggleFunction()">SAMPLE WORK</a>
+        <a href="#highlights"                                                                                        
+            class="w3-bar-item w3-button" onclick="toggleFunction()">HIGHLIGHTS</a>
+        <a target="_blank" href="https://drive.google.com/file/d/1kMUD7y9qDviOY9yNu8NJ6YcXu7Nqiyva/view?usp=sharing" 
+            class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+        <a href="#contact"                                                                                           
+            class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    </div>
+</div>    
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="square-quote w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-text-white">
+        Whoever wants to reach a distant goal must take small steps.
+    </span>
+    <br class="stop">
+    <br>
+    <span class="square-cite w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity w3-text-white">
+        Saul Bellow
+    </span>
+    </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+   <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+        <img style="float:left;" src="pics/me.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+        <p style="clear:both;"></p> <b><i class="fa fa-user w3-margin-right"></i>James Skomsky</b></p><br>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <p>
+            I'm an IT Professional with industry experience in all phases of software development, documentation, testing, debugging, and support. 
+        </p>
+        <p>
+            I am successful working in remote and outsourced teams as well as self-directed.
+        </p>
+        <p>
+            I take initiative and use all opportunities to broaden my skills and experience.
+        </p>
+        <p>
+            I keep pace with software engineering technology with professional continuing education as well as recently completing several courses in Web Development at Temple University.
+        </p>
+        <p>
+            I'm a proficient SQL coder with experience developing numerous "extract, transform, load" (ETL) functions in large scale enterprise data warehouse.
+        </p>
+        <p>
+            I am a object oriented programmer with experience developing, enhancing and supporting numerous applications.
+        </p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
+  <p class="w3-wide"></i></i>ETL</p>
+  <div class="w3-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+  </div>
+  <p class="w3-wide"></i></i>SQL</p>
+  <div class="w3-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+  </div>
+  <p class="w3-wide"></i>Web Development</p>
+  <div class="w3-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"></i>Ruby Programming</p>
+  <div class="w3-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+  </div>
+  <p class="w3-wide">ASP.NET apps</p>
+  <div class="w3-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">70%</div>
+  </div>
+</div>
+
+
+
+<!-- Second Parallax Image with HighLights Text -->
+<div class="w3-row w3-center w3-dark-grey w3-padding-16"></div>
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="highlights">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow: 0 0 6px #000000;">HighLights</span>
+  </div>
+</div>
+
+
+<div class="w3-content w3-container w3-padding-32" id="portfolio">
+    <h3 class="w3-center">Team Collaboration</h3>
+    <p class="w3-center"><em>Here's examples of teamwork tools, skills and other roles I've filled so far.</em></p>
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m4">
+            <p>Best practice communication, idea sharing, and documentation using Microsoft Teams, OneNote, and SharePoint</p>
+        </div>
+        <div class="w3-col m4">
+            <p>Off-shore collaboration with Cerner Health Services India team providing cross-training, coding updates, and hands-on education</p>
+        </div>
+        <div class="w3-col m4">
+            <p>24/7 oncall support team experience using BMC Remedy Service Management and (x)matters® alert system</p>
+        </div>
+        <div class="w3-col m4">
+            <p>Agile Development - Coded and optimized TDD frameworks</p>
+        </div>
+        <div class="w3-col m4">
+            <p>Jira Kanban project management</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-32" id="portfolio">
+  <h3 class="w3-center">Business Intelligence/Data Warehouse Data Mining Accomplishments</h3>
+  <p class="w3-center"><em>This is some of the Extract-Transform-Load work I've done intergrating large scale data warehouse with numerous providers.</em></p>
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m4">
+            <p>Streamlined claim billing data accuracy and A/R reduction for 3M™ Ambulatory Revenue Management</p>
+        </div>
+        <div class="w3-col m4">
+            <p>Developed and maintained operations of Onbase® by Hyland payment and response remittance data extract process</p>
+        </div>
+        <div class="w3-col m4">
+            <p>Developed queries to feed Press Ganey® Patient Experience for custom survey development</p>
+        </div>
+        <div class="w3-col m4">
+            <p>Integrated HIPAA Security audit data for Document Management and Provider Accounting apps for clients using FairWarning® and P2Sentinel™</p>
+        </div>
+        <div class="w3-col m4">
+            <p>Connected population health management compliance data (aka “Core Measures”) in multiple cohorts/settings per Centers for Medicare & Medicaid Services requirements</p>
+        </div>
+        <div class="w3-col m4">
+            <p>Extracted financial data for numerous patient, provider, organizational and enterprise medical statements for RevSpring™ A/R Receivable Management</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Third Parallax Image with Contact Text -->
+<div class="w3-row w3-center w3-dark-grey w3-padding-16"></div>
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow: 0 0 6px #000000;">CONTACT</span>
+  </div>
+</div>
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Greater Philadelphia, US<br>
+        <i class="fa fa-phone    fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Ph: 484-901-6678<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> EM: james.skomsky@gmail.com<br>
+        <i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a href="https://www.linkedin.com/in/james-skomsky/" target="_blank">linkedin.com/in/james-skomsky</a><br>
+        <i class="fa fa-github   fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a href="https://github.com/skomja00" target="_blank">github.com/skomja00</a><br>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/w3css_templates.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p><i class="fa fa-chrome" aria-hidden="true"></i>&nbsp;Developed in Chrome</i></p>
+  <p><i class="fa fa-font-awesome" aria-hidden="true"></i>&nbsp;Created using Font Awesome</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {windowScroll()};
+function windowScroll() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-gray";
+    } else {
+        navbar.className = navbar.className.replace("w3-card w3-animate-top w3-gray", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+
+</script>
+
+</body>
+</html>
+
